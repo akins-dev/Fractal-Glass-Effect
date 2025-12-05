@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Glassform / L'AURA
 
-## Getting Started
+A luxury landing page concept exploring refractive glass distortions, Swiss-style typography, and WebGL performance.
 
-First, run the development server:
+## Demo Video
+Watch the demo below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <img src="./public/video.gif" width="600" alt="App demo" />
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> If the video does not play, open [public/video.gif](public/video.gif) directly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack & Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS (Custom "Swiss" & "Cozy" config)
+* **3D / WebGL:**
+    * [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) (R3F)
+    * [@react-three/drei](https://github.com/pmndrs/drei) (Utilities)
+    * [Three.js](https://threejs.org/)
+* **Shaders:** Custom GLSL (Fractal Glass/Refraction logic)
 
-## Learn More
+## ✨ Key Features
 
-To learn more about Next.js, take a look at the following resources:
+* **Custom GLSL Shader:** Implements a "Fractal Glass" effect using iterative displacement and parallax mapping.
+* **Orthographic Projection:** Uses an orthographic camera to map 3D geometry 1:1 with the 2D viewport for a "wallpaper" feel.
+* **Responsive Canvas:** Dynamic viewport scaling ensures the shader stretches perfectly across mobile and desktop without distortion.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Typography:** Serif (Playfair Display) + Sans (Inter) for high-contrast hierarchy.
+* **Palette:** Organic Beige (`#e8e4dc`) & Deep Charcoal (`#1a1918`).
+* **Layout:** Minimalist "Swiss Style" grid with corner-anchored navigation.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Part of my 20-Day UI/Interaction Challenge.*
